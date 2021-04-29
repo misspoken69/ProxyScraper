@@ -25,8 +25,8 @@ print(f'''{Fore.BLUE}
 
 def scrape(type):
     print(f'{Fore.BLUE}> {Fore.RESET}Selected: {type}')
-    urllib.request.urlretrieve(f'https://api.proxyscrape.com/?request=getproxies&proxytype={type.lower()}&timeout=10000&country=all&ssl=all&anonymity=all', f'{type}-proxies.txt')
-    print(f'{Fore.GREEN}> {Fore.RESET}Successfully scraped {type} proxies! The file should be called {type}-proxies.txt!')
+    urllib.request.urlretrieve(f'https://api.proxyscrape.com/?request=getproxies&proxytype={type.lower()}&timeout=10000&country=all&ssl=all&anonymity=all', f'{type}.txt')
+    print(f'{Fore.GREEN}> {Fore.RESET}Successfully scraped {type} proxies! The file should be called {type}.txt!')
     input()
     exit()
 
